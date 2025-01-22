@@ -1,4 +1,5 @@
-# This is a random greetings generator using PHP
+# Greetings Generator
+This is my first package using PHP
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/tanayweb/greetings-generator.svg?style=flat-square)](https://packagist.org/packages/tanayweb/greetings-generator)
 [![Tests](https://img.shields.io/github/actions/workflow/status/tanayweb/greetings-generator/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/tanayweb/greetings-generator/actions/workflows/run-tests.yml)
@@ -25,14 +26,24 @@ composer require tanayweb/greetings-generator
 ## Usage
 
 ```php
-$skeleton = new Tanayweb\GreetingsGenerator();
-echo $skeleton->echoPhrase('Hello, Tanayweb!');
+use Tanayweb\GreetingsGenerator\Greetings;
+
+echo Greetings:greet();
+
 ```
 
 ## Testing
 
 ```bash
+
 composer test
+
+```
+
+```bash
+
+or You can use ./vendor/bin/phpunit
+
 ```
 
 ## Changelog
@@ -41,7 +52,7 @@ Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed re
 
 ## Contributing
 
-Please see [CONTRIBUTING](https://github.com/spatie/.github/blob/main/CONTRIBUTING.md) for details.
+Please see [CONTRIBUTING](https://github.com/tanayweb/.github/blob/main/CONTRIBUTING.md) for details.
 
 ## Security Vulnerabilities
 
