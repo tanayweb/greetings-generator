@@ -1,6 +1,6 @@
 <?php
 
-namespace VendorName\Skeleton\Tests;
+namespace Tanayweb\GreetingsGenerator\Tests;
 
 use PHPUnit\Framework\TestCase;
 
